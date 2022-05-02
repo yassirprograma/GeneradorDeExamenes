@@ -5,131 +5,317 @@
         <title>Cuestionario</title>
         <link rel="stylesheet" href="css/cuestionarios.css">
         <link rel="shortcut icon" href="imgs/icon.png">
+        
+        <script src="./js/jquery-3.6.0.js"></script>
+
+        <script src="./saveinfousuario.js"></script> <!--PARA GUARDAR EN ALMACENAMIENTO LOCAL LA INFOGRMACIÓN DEL USUARIO Y LA UNIDAD TEMÁTICA QUE ELIGIÓ -->
+
+        <script src="./funciones_Cuestionario.js"></script>
+
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--https://animate.style/-->
     </head>
     <body>
-        <header>
-            <div id="header">
-                <h1>Unidad Temática</h1>
+
+
+          <script>
+
+                //ALMACENAMOSEN VARIABLES 
+
+                var usuario=getQueryVariable('usuario'); 
+                usuario=usuario.replaceAll("+"," ");            
+                var boleta=getQueryVariable('boleta'); 
+                var unidad=getQueryVariable('unidad'); 
+          </script>
+
+
+
+
+
+        <header class="animate__animated animate__fadeInLeft">
+            <div id="header" >
+                  <script>
+                        document.open(); 
+                        //*****************************escribo en el header la información del usuario
+                        document.write("<h1 class='animate__animated animate__pulse animate__infinite'>Examen de la unidad temática "+unidad+"</h1>");
+                        document.write("<h3 class='animate__animated animate__fadeInDown '>Nombre de usuario: "+usuario+"</h3>");
+                        document.write("<h3 class='animate__animated animate__fadeInDown '>Número de boleta: "+boleta+"</h3>");
+                  
+                        document.close();
+                  </script>
+                  
             </div>
         </header>
-        <div id="main">
-            <form action="resultadosI" method="">
 
-                <div class="pregunta">
-                    <div class="texto">
-                        <h2>¿Quis autem vel eum vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</h2>
-                    </div>
-                    <div class="imagenRef">
-                        <img src="imgs/icon.png">
-                    </div>
-                    <div class="respuesta">
-                        <input type="checkbox" id="resp1" value="a1"><label for="resp1">Opción 1</label><br/>
-                        <input type="checkbox" id="resp2" value="a2"><label for="resp1">Opción 2</label><br/>
-                        <input type="checkbox" id="resp3" value="a3"><label for="resp1">Opción 3</label><br/>
-                        <input type="checkbox" id="resp4" value="a4"><label for="resp1">Opción 4</label><br/>
-                    </div>
-                </div>
-                <br/>
+        <script>//verpreguntasconsola(unidad);</script>
 
-                <div class="pregunta">
-                    <div class="texto">
-                        <h2>¿Quis autem vel eum vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</h2>
-                    </div>
-                    <div class="imagenRef">
-                        <img src="imgs/icon.png">
-                    </div>
-                    <div class="respuesta">
-                        <input type="checkbox" id="resp1" value="a1"><label for="resp1">Opción 1</label><br/>
-                        <input type="checkbox" id="resp2" value="a2"><label for="resp1">Opción 2</label><br/>
-                        <input type="checkbox" id="resp3" value="a3"><label for="resp1">Opción 3</label><br/>
-                        <input type="checkbox" id="resp4" value="a4"><label for="resp1">Opción 4</label><br/>
-                    </div>
-                </div>
-                <br/>
+        <div id="main" class="animate__animated animate__fadeInLeft">
+            <form action="" method=""> <!--EN ACTION O METHOD DEBEMOS COLOCAR LA FUNCIÓN O ARCHIVO DE JS QUE VA A PROCESAR EL FORMULARIO-->
+                                       <!--AL ENVIAR EL FORMULARIO DEBE VERIFICARSE QUE TODAS LAS RESPUESTAS ESTÉN CONTESTADAS-->
 
-                <div class="pregunta">
-                    <div class="texto">
-                        <h2>¿Quis autem vel eum vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</h2>
-                    </div>
-                    <div class="imagenRef">
-                        <img src="imgs/icon.png">
-                    </div>
-                    <div class="respuesta">
-                        <input type="checkbox" id="resp1" value="a1"><label for="resp1">Opción 1</label><br/>
-                        <input type="checkbox" id="resp2" value="a2"><label for="resp1">Opción 2</label><br/>
-                        <input type="checkbox" id="resp3" value="a3"><label for="resp1">Opción 3</label><br/>
-                        <input type="checkbox" id="resp4" value="a4"><label for="resp1">Opción 4</label><br/>
-                    </div>
-                </div>
-                <br/>
 
-                <div class="pregunta">
-                    <div class="texto">
-                        <h2>¿Quis autem vel eum vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</h2>
+                <div class="pregunta" id="preg1">  <!--**************PREGUNTA1*++++++++++++++++++++++++-->
+                    <div class="descripcion" id="desc_preg1">
+                        
                     </div>
-                    <div class="imagenRef">
-                        <img src="imgs/icon.png">
+                    <br>
+                    <div class="imagen">
+                        <img src="#" id="img_preg1" alt=" ">
                     </div>
-                    <div class="respuesta">
-                        <input type="checkbox" id="resp1" value="a1"><label for="resp1">Opción 1</label><br/>
-                        <input type="checkbox" id="resp2" value="a2"><label for="resp1">Opción 2</label><br/>
-                        <input type="checkbox" id="resp3" value="a3"><label for="resp1">Opción 3</label><br/>
-                        <input type="checkbox" id="resp4" value="a4"><label for="resp1">Opción 4</label><br/>
+                    <br>
+                    <div class="opciones">
+                        <!-- 
+                             ¡ATENCIÓN !!!!!!!!!!!!!!!!
+                              Cada opción tiene un id irrepetible para cada una de las 10 preguntas
+                              El atributo value es el que el formulario guarda, hay cuatro opciones, a,b,c,d
+                        -->
+                        <div><span>a.</span><input type="radio" id="a_preg1" name="resp_preg1" value="a"> <label for="a_preg1" id="label_a_preg1"></label> <img src="#" alt=" " id="img_a_preg1"> <br><br></div>
+                        <div><span>b.</span><input type="radio" id="b_preg1" name="resp_preg1" value="b"> <label for="b_preg1" id="label_b_preg1"></label> <img src="#" alt=" " id="img_b_preg1"> <br><br></div>
+                        <div><span>c.</span><input type="radio" id="c_preg1" name="resp_preg1" value="c"> <label for="c_preg1" id="label_c_preg1"></label> <img src="#" alt=" " id="img_c_preg1"> <br><br></div>
+                        <div><span>d.</span><input type="radio" id="d_preg1" name="resp_preg1" value="d"> <label for="d_preg1" id="label_d_preg1"></label> <img src="#" alt=" " id="img_d_preg1"> <br><br></div>
                     </div>
-                </div>
-                <br/>
+                </div> 
 
-                <div class="pregunta">
-                    <div class="texto">
-                        <h2>¿Quis autem vel eum vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</h2>
-                    </div>
-                    <div class="imagenRef">
-                        <img src="imgs/icon.png">
-                    </div>
-                    <div class="respuesta">
-                        <input type="checkbox" id="resp1" value="a1"><label for="resp1">Opción 1</label><br/>
-                        <input type="checkbox" id="resp2" value="a2"><label for="resp1">Opción 2</label><br/>
-                        <input type="checkbox" id="resp3" value="a3"><label for="resp1">Opción 3</label><br/>
-                        <input type="checkbox" id="resp4" value="a4"><label for="resp1">Opción 4</label><br/>
-                    </div>
-                </div>
-                <br/>
+                <br>
+                <br>
 
-                <div class="pregunta">
-                    <div class="texto">
-                        <h2>¿Quis autem vel eum vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</h2>
-                    </div>
-                    <div class="imagenRef">
-                        <img src="imgs/icon.png">
-                    </div>
-                    <div class="respuesta">
-                        <input type="checkbox" id="resp1" value="a1"><label for="resp1">Opción 1</label><br/>
-                        <input type="checkbox" id="resp2" value="a2"><label for="resp1">Opción 2</label><br/>
-                        <input type="checkbox" id="resp3" value="a3"><label for="resp1">Opción 3</label><br/>
-                        <input type="checkbox" id="resp4" value="a4"><label for="resp1">Opción 4</label><br/>
-                    </div>
-                </div>
-                <br/>
+                <div class="pregunta" id="preg2"> <!--**************PREGUNTA2*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg2">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg2" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg2" name="resp_preg2" value="a"> <label for="a_preg2" id="label_a_preg2"></label> <img src="#" alt=" " id="img_a_preg2"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg2" name="resp_preg2" value="b"> <label for="b_preg2" id="label_b_preg2"></label> <img src="#" alt=" " id="img_b_preg2"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg2" name="resp_preg2" value="c"> <label for="c_preg2" id="label_c_preg2"></label> <img src="#" alt=" " id="img_c_preg2"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg2" name="resp_preg2" value="d"> <label for="d_preg2" id="label_d_preg2"></label> <img src="#" alt=" " id="img_d_preg2"> <br><br></div>
+                  </div>
+              </div>
 
-                <div class="pregunta">
-                    <div class="texto">
-                        <h2>¿Quis autem vel eum vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</h2>
-                    </div>
-                    <div class="imagenRef">
-                        <img src="imgs/icon.png">
-                    </div>
-                    <div class="respuesta">
-                        <input type="checkbox" id="resp1" value="a1"><label for="resp1">Opción 1</label><br/>
-                        <input type="checkbox" id="resp2" value="a2"><label for="resp1">Opción 2</label><br/>
-                        <input type="checkbox" id="resp3" value="a3"><label for="resp1">Opción 3</label><br/>
-                        <input type="checkbox" id="resp4" value="a4"><label for="resp1">Opción 4</label><br/>
-                    </div>
-                </div>
-                <br/>
+              <br>
+              <br>
 
-                <input type="submit" value="Enviar respuesta" >
+
+              <div class="pregunta" id="preg3"> <!--**************PREGUNTA3*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg3">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg3" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg3" name="resp_preg3" value="a"> <label for="a_preg3" id="label_a_preg3"></label> <img src="#" alt=" " id="img_a_preg3"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg3" name="resp_preg3" value="b"> <label for="b_preg3" id="label_b_preg3"></label> <img src="#" alt=" " id="img_b_preg3"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg3" name="resp_preg3" value="c"> <label for="c_preg3" id="label_c_preg3"></label> <img src="#" alt=" " id="img_c_preg3"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg3" name="resp_preg3" value="d"> <label for="d_preg3" id="label_d_preg3"></label> <img src="#" alt=" " id="img_d_preg3"> <br><br></div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+
+              <div class="pregunta" id="preg4"> <!--**************PREGUNTA 4*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg4">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg4" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg4" name="resp_preg4" value="a"> <label for="a_preg4" id="label_a_preg4"></label> <img src="#" alt=" " id="img_a_preg4"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg4" name="resp_preg4" value="b"> <label for="b_preg4" id="label_b_preg4"></label> <img src="#" alt=" " id="img_b_preg4"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg4" name="resp_preg4" value="c"> <label for="c_preg4" id="label_c_preg4"></label> <img src="#" alt=" " id="img_c_preg4"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg4" name="resp_preg4" value="d"> <label for="d_preg4" id="label_d_preg4"></label> <img src="#" alt=" " id="img_d_preg4"> <br><br></div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+
+              <div class="pregunta" id="preg5"> <!--**************PREGUNTA 5*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg5">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg5" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg5" name="resp_preg5" value="a"> <label for="a_preg5" id="label_a_preg5"></label> <img src="#" alt=" " id="img_a_preg5"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg5" name="resp_preg5" value="b"> <label for="b_preg5" id="label_b_preg5"></label> <img src="#" alt=" " id="img_b_preg5"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg5" name="resp_preg5" value="c"> <label for="c_preg5" id="label_c_preg5"></label> <img src="#" alt=" " id="img_c_preg5"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg5" name="resp_preg5" value="d"> <label for="d_preg5" id="label_d_preg5"></label> <img src="#" alt=" " id="img_d_preg5"> <br><br></div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+
+
+              <div class="pregunta" id="preg6"> <!--**************PREGUNTA 6*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg6">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg6" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg6" name="resp_preg6" value="a"> <label for="a_preg6" id="label_a_preg6"></label> <img src="#" alt=" " id="img_a_preg6"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg6" name="resp_preg6" value="b"> <label for="b_preg6" id="label_b_preg6"></label> <img src="#" alt=" " id="img_b_preg6"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg6" name="resp_preg6" value="c"> <label for="c_preg6" id="label_c_preg6"></label> <img src="#" alt=" " id="img_c_preg6"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg6" name="resp_preg6" value="d"> <label for="d_preg6" id="label_d_preg6"></label> <img src="#" alt=" " id="img_d_preg6"> <br><br></div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+
+              <div class="pregunta" id="preg7"> <!--**************PREGUNTA 7*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg7">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg7" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg7" name="resp_preg7" value="a"> <label for="a_preg7" id="label_a_preg7"></label> <img src="#" alt=" " id="img_a_preg7"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg7" name="resp_preg7" value="b"> <label for="b_preg7" id="label_b_preg7"></label> <img src="#" alt=" " id="img_b_preg7"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg7" name="resp_preg7" value="c"> <label for="c_preg7" id="label_c_preg7"></label> <img src="#" alt=" " id="img_c_preg7"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg7" name="resp_preg7" value="d"> <label for="d_preg7" id="label_d_preg7"></label> <img src="#" alt=" " id="img_d_preg7"> <br><br></div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+
+              <div class="pregunta" id="preg8"> <!--**************PREGUNTA 8*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg8">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg8" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg8" name="resp_preg8" value="a"> <label for="a_preg8" id="label_a_preg8"></label> <img src="#" alt=" " id="img_a_preg8"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg8" name="resp_preg8" value="b"> <label for="b_preg8" id="label_b_preg8"></label> <img src="#" alt=" " id="img_b_preg8"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg8" name="resp_preg8" value="c"> <label for="c_preg8" id="label_c_preg8"></label> <img src="#" alt=" " id="img_c_preg8"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg8" name="resp_preg8" value="d"> <label for="d_preg8" id="label_d_preg8"></label> <img src="#" alt=" " id="img_d_preg8"> <br><br></div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+
+              <div class="pregunta" id="preg9"> <!--**************PREGUNTA 9*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg9">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg9" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg9" name="resp_preg9" value="a"> <label for="a_preg9" id="label_a_preg9"></label> <img src="#" alt=" " id="img_a_preg9"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg9" name="resp_preg9" value="b"> <label for="b_preg9" id="label_b_preg9"></label> <img src="#" alt=" " id="img_b_preg9"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg9" name="resp_preg9" value="c"> <label for="c_preg9" id="label_c_preg9"></label> <img src="#" alt=" " id="img_c_preg9"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg9" name="resp_preg9" value="d"> <label for="d_preg9" id="label_d_preg9"></label> <img src="#" alt=" " id="img_d_preg9"> <br><br></div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+
+              <div class="pregunta" id="preg10"> <!--**************PREGUNTA 10*++++++++++++++++++++++++-->
+                  <div class="descripcion" id="desc_preg10">
+                      <h2> </h2>
+                  </div>
+                  <br>
+                  <div class="imagen">
+                      <img src="#" id="img_preg10" alt=" ">
+                  </div>
+                  <br>
+                  <div class="opciones">
+                      <!-- RECORDATORIO: LA OPCIÓN QUE SE SELCCIONE, SERÁ  -->
+                      <div><span>a.</span><input type="radio" id="a_preg10" name="resp_preg10" value="a"> <label for="a_preg10" id="label_a_preg10"></label> <img src="#" alt=" " id="img_a_preg10"> <br><br></div>
+                      <div><span>b.</span><input type="radio" id="b_preg10" name="resp_preg10" value="b"> <label for="b_preg10" id="label_b_preg10"></label> <img src="#" alt=" " id="img_b_preg10"> <br><br></div>
+                      <div><span>c.</span><input type="radio" id="c_preg10" name="resp_preg10" value="c"> <label for="c_preg10" id="label_c_preg10"></label> <img src="#" alt=" " id="img_c_preg10"> <br><br></div>
+                      <div><span>d.</span><input type="radio" id="d_preg10" name="resp_preg10" value="d"> <label for="d_preg10" id="label_d_preg10"></label> <img src="#" alt=" " id="img_d_preg10"> <br><br></div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+
+
+
+
+
+                <script> //para generar el cuestionario, desplegar el cuestionario
+
+                    var cuestionario=generar_N_Preguntas_Aleatorias(10, unidad); //generamos 10 preguntas de la unidad que se haya seleccionado
+                                                                                     //"cuestionario es un arreglo de objetos", donde cada objeto corresponde a una de las preguntas elegidas al azar
+                    escribepreguntas(cuestionario); //despliega las 10 preguntas 
+
+
+                  /**********
+                   *
+                   * 
+                   * 
+                   * 
+                   * NOTA PARA URIEL:
+                   * 
+                   * A CONTINUACIÓN SE ENCUENTRA EL ARREGLO CON LAS RESPUESTAS CORRESPONDIENTES A LAS 10 PREGUNTAS GENERADAS ALEATORIAMENTE:
+                   * 
+                   * */
+                     var solucion_cuestionario=obtenerSolución(cuestionario);
+
+                    //PUEDES USAR LA SIGUIENTE LÍNEA DE CÓDIGO PARA VER EN LA CONSOLA DEL NAVEGADOR EL ARREGLO CON LAS RESPUESTAS:
+                     console.log(solucion_cuestionario);
+
+
+                </script>
+                
+                
+                <div id="divbotonenviar"><input class="animate__animated animate__pulse animate__infinite" id="botonenviar"  type="submit" value="Enviar respuesta" ></div>
+                
             </form>
+
+            
+
         </div>
     
+        
+
     </body>
 </html>

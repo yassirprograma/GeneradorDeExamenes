@@ -1,24 +1,82 @@
+@font-face {
+      font-family: "Noto Sans";
+      src: url("../fuentes/Noto_Sans/NotoSans-Regular.ttf");
+}
+
+@font-face {
+      font-family: "Roboto";
+      src: url("../fuentes/Robotofont/Roboto-Regular.ttf");
+}
+
 body{
-    background-color: powderblue;
+font-family: Roboto, Noto Sans,arial,sans-serif;
+    background-color: rgba(161, 250, 236, 0.633);
     padding: 1%;
 }
 header{
     text-align:center;
+    border-radius: 10px;
+    margin-bottom: 10%;
 }
 #main{
     text-align:justify;
     padding:1%;
-    background-color:lightskyblue;
+    background-color:#6932dc;
+    border-radius: 10px;
+    
 }
 div.pregunta{
-    background-color:rgb(80, 80, 170);
+    background-color:rgb(255, 255, 255);
     padding: 1%;
+    border-radius: 10px;
 }
 div.texto, header{
-    background-color:rgb(60, 60, 130);
+    background-color:#6932dc;
     padding: 2%;
     color: white;
 }
-img{
-    width: 15%;
+
+.opciones input{
+      margin: 20px;     
+}
+
+/*
+@media only screen and (max-width: 575px) {
+      .opciones label{
+            font-size:xx-large;
+      }      
+
+      .pregunta{
+            font-size:xx-large;
+      }
+      .pregunta, header{
+            font-size:x-large;
+      }
+      .opciones input{
+            margin: 50px;     
+      }
+}
+*/
+
+.opciones label{
+      font-size:x-large;
+}  
+.pregunta:hover{
+      background-color: azure;
+      transition-delay:0.1s;
+      
+}
+
+#divbotonenviar{
+      text-align: center;
+}
+
+#botonenviar{
+      border-radius: 10px;
+      padding-left: 5%;
+      padding-right: 5%;
+      height: 100px;
+      margin-bottom: 5%;
+      font-size: xx-large;
+      font-family: Roboto, Noto Sans,arial,sans-serif;
 }
