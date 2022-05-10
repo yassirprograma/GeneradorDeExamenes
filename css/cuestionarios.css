@@ -60,13 +60,15 @@ div.texto, header{
 
 .opciones label{
       font-size:x-large;
-}  
+} 
+
+/*
 .pregunta:hover{
       background-color: azure;
       transition-delay:0.1s;
       
 }
-
+*/
 #divbotonenviar{
       text-align: center;
 }
@@ -79,4 +81,22 @@ div.texto, header{
       margin-bottom: 5%;
       font-size: xx-large;
       font-family: Roboto, Noto Sans,arial,sans-serif;
+}
+
+
+#botonvolver{
+      background-color:azure;
+      text-align: center;
+      display: none;
+      padding-top:10px;
+      position: relative;
+      width: 20%;
+      height:50px;
+      left: 40%;
+      border-radius: 10px;
+      font-size: larger;
+      
+}
+#botonvolver div{
+      height: 100%;
 }

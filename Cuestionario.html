@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Cuestionario</title>
         <link rel="stylesheet" href="css/cuestionarios.css">
+        <link rel="stylesheet" href="css/ventana_modal.css">
+
         <link rel="shortcut icon" href="imgs/icon.png">
         
         <script src="./js/jquery-3.6.0.js"></script>
@@ -11,6 +13,8 @@
         <script src="./saveinfousuario.js"></script> <!--PARA GUARDAR EN ALMACENAMIENTO LOCAL LA INFOGRMACIÓN DEL USUARIO Y LA UNIDAD TEMÁTICA QUE ELIGIÓ -->
 
         <script src="./funciones_Cuestionario.js"></script>
+
+
 
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--https://animate.style/-->
     </head>
@@ -20,11 +24,11 @@
           <script>
 
                 //ALMACENAMOSEN VARIABLES 
-
                 var usuario=getQueryVariable('usuario'); 
                 usuario=usuario.replaceAll("+"," ");            
                 var boleta=getQueryVariable('boleta'); 
                 var unidad=getQueryVariable('unidad'); 
+                
           </script>
 
 
@@ -46,7 +50,7 @@
             </div>
         </header>
 
-        <script>//verpreguntasconsola(unidad);</script>
+        <script>verpreguntasconsola(unidad);</script>
 
         <div id="main" class="animate__animated animate__fadeInLeft">
             <form action="" method=""> <!--EN ACTION O METHOD DEBEMOS COLOCAR LA FUNCIÓN O ARCHIVO DE JS QUE VA A PROCESAR EL FORMULARIO-->
@@ -282,40 +286,98 @@
 
 
                 <script> //para generar el cuestionario, desplegar el cuestionario
-
-                    var cuestionario=generar_N_Preguntas_Aleatorias(10, unidad); //generamos 10 preguntas de la unidad que se haya seleccionado
+                    let numPreguntasAleatorias = 10;
+                    var cuestionario=generar_N_Preguntas_Aleatorias(numPreguntasAleatorias, unidad); //generamos 10 preguntas de la unidad que se haya seleccionado
                                                                                      //"cuestionario es un arreglo de objetos", donde cada objeto corresponde a una de las preguntas elegidas al azar
                     escribepreguntas(cuestionario); //despliega las 10 preguntas 
 
 
-                  /**********
-                   *
-                   * 
-                   * 
-                   * 
-                   * NOTA PARA URIEL:
-                   * 
-                   * A CONTINUACIÓN SE ENCUENTRA EL ARREGLO CON LAS RESPUESTAS CORRESPONDIENTES A LAS 10 PREGUNTAS GENERADAS ALEATORIAMENTE:
-                   * 
-                   * */
-                     var solucion_cuestionario=obtenerSolución(cuestionario);
-
-                    //PUEDES USAR LA SIGUIENTE LÍNEA DE CÓDIGO PARA VER EN LA CONSOLA DEL NAVEGADOR EL ARREGLO CON LAS RESPUESTAS:
-                     console.log(solucion_cuestionario);
-
+                  /* A CONTINUACIÓN SE ENCUENTRA EL ARREGLO CON LAS RESPUESTAS CORRESPONDIENTES A LAS 10 PREGUNTAS GENERADAS ALEATORIAMENTE:*/
+                     let solucion_cuestionario=obtenerSolución(cuestionario);
 
                 </script>
                 
+                <div id="divbotonenviar"><input class="animate__animated animate__pulse animate__infinite" id="botonenviar"  type="button" value="Enviar respuesta"  class="open-modal" data-open="modal" ></div>
                 
-                <div id="divbotonenviar"><input class="animate__animated animate__pulse animate__infinite" id="botonenviar"  type="submit" value="Enviar respuesta" ></div>
-                
-            </form>
+            </form>            
 
-            
+
+            <div id="botonvolver">
+                  <a href="./index.html">
+                        <div>
+                              Volver al inicio
+                        </div>
+                  </a>
+            </div>
 
         </div>
     
         
+          
+        <div class="modal" id="modal">
+            <div class="modal-dialog">
+                <header class="modal-header">
+                    <p id = "header_resultados"></p>
+
+                <button id="botonCerrarModal" class="close-modal" aria-label="close modal" data-close>
+                  ✕  
+                </button>
+                </header>
+            
+
+          
+
+                <div id = "resultados_div"></div>
+           
+
+
+                <div id = "divBotonRevisar">
+                    <button id = "botonRevisar">Revisar</button>
+                </div>
+
+             </div>
+        </div> 
+          
+    
+            <script>
+    
+            const isVisible = "is-visible";
+
+            document.getElementById("botonenviar").addEventListener("click", function(){
+                //Esto sucederá cuando se presione el boton enviar
+
+                if(verificarRadios(numPreguntasAleatorias)){//Antes de mostrar resultados comprobamos
+                                                            //que todo esté contestado
+      
+                    const modalId = this.dataset.open;          //Estas dos lineas muestran la ventana modal
+                    document.getElementById(modalId).classList.add(isVisible);
+
+                    let respuestas_usuario = obtenerRespuestasUsuario(numPreguntasAleatorias); //obtenemos un arreglo con las respuestas del usuario
+                    let resultado = calificar(respuestas_usuario, solucion_cuestionario);      //Calificamos. El resultado es la cantidad de respuestas correcta
+
+                    escribeResultados(resultado);               //Escribimos los resultados en la ventana modal
+
+                }else
+                    alert("Contesta todas las preguntas, por favor");
+
+            });
+
+            //Agregamos los eventos para cuando se presione el boton X
+            document.getElementById("botonCerrarModal").addEventListener("click", function() {
+                this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+            });
+            
+            //Agregamos el evento para cuando se presione el boton Revisar
+            document.getElementById("botonRevisar").addEventListener("click", function() {
+                this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+                marcarRespuestas(numPreguntasAleatorias,obtenerRespuestasUsuario(numPreguntasAleatorias),solucion_cuestionario);   //Esta funcion marca con colores las respuestas incorrectas 
+                document.getElementById("botonenviar").style.display = 'none';
+                document.getElementById("botonvolver").style.display='block';
+                
+                console.log(solucion_cuestionario);
+            });
+    
+            </script>
 
     </body>
 </html>

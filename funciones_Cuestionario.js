@@ -83,7 +83,7 @@ function escribepreguntas(quizz){
             if(question.imagen==="#")select_id("img_preg"+x.toString()).style.display="none";
             
       
-            
+      
 
             select_id("label_a_preg"+x.toString()).innerHTML+=(" "+question.op_a);
             select_id("img_a_preg"+x.toString()).setAttribute("src", question.img_a);
@@ -116,4 +116,121 @@ function obtenerSolución(quizz){ //devuelve un arreglo con la solución al cues
       return arreglorespuestas;
 }
 
+function obtenerPreguntasCorrectas(){
+      /*Devuelve un arreglo con las preguntas que fueron 
+       contestadas correctamente, a cada indice se le asigna un 1 si es correcta
+       y 0 si fue incorrecta, esto se usará para poder asignar color a las preguntas
+      */
 
+      let preguntasCorrectas = [];
+
+      for(let i = 0; i< CuestionarioAleatorio.length; i++ ){
+
+            let respuestaUsuario = CuestionarioAleatorio[i].respuesta;
+            let respuestaCorrecta = RespuestasCorrectas[i];
+
+            if(respuestaUsuario == respuestaCorrecta)
+                  preguntasCorrectas.push(0);
+            else
+                  preguntasCorrectas.push(1);
+      }
+      return preguntasCorrectas;
+}
+
+function calificar(RespuestasUsuario, RespuestasCorrectas){
+
+      let calificacion = 0;
+
+      for(let i = 0; i< RespuestasUsuario.length; i++ ){
+
+            let respuestaUsuario = RespuestasUsuario[i];
+            let respuestaCorrecta = RespuestasCorrectas[i];
+
+            if(respuestaUsuario === respuestaCorrecta)
+                  calificacion++;
+
+      }
+      return " " + calificacion;
+}
+
+
+function mostrarRespuesta(n, CuestionarioAleatorio){ //funcion de testeo para mostrar respuesta correcta
+      return CuestionarioAleatorio[n].respuesta;
+}
+
+
+function obtenerRespuestasUsuario(numPreguntasAleatorias){
+
+
+      let nombre_pregunta, respuestaUsuario, opcionesPregunta;
+      let respuestas_usuario = []; //Arreglo para guardar las respuestas del usuario
+    
+      for(let i = 0; i<numPreguntasAleatorias; i++){
+       
+            nombre_pregunta = 'resp_preg' + (i+1); //Obtenemos el nombre
+            opcionesPregunta = document.getElementsByName(nombre_pregunta); //Guardamos las cuatro respuestas de la pregunta
+
+            for(let j = 0; j < opcionesPregunta.length; j++){  //Con este for vemos cual es la que está seleccionada
+              if(opcionesPregunta[j].checked )
+                 respuestaUsuario = opcionesPregunta[j].value;
+            }
+
+            respuestas_usuario.push(respuestaUsuario); //Si la respuesta está seleccionada, la agregamos al arreglo
+            
+      }
+
+      return respuestas_usuario;
+
+}
+
+function verificarRadios(numPreguntasAleatorias){
+
+      let nombre_pregunta, opcionesPregunta;
+      let preguntasContestadas = 0;
+
+      for(let i = 0; i<numPreguntasAleatorias; i++){
+       
+            nombre_pregunta = 'resp_preg' + (i+1); //Obtenemos el nombre
+            opcionesPregunta = document.getElementsByName(nombre_pregunta); //Guardamos las cuatro respuestas de la pregunta
+
+            for(let j = 0; j < opcionesPregunta.length; j++)  //Con este for vemos cual es la que está seleccionada
+                  if(opcionesPregunta[j].checked )
+                        ++preguntasContestadas;      
+      }
+      return numPreguntasAleatorias === preguntasContestadas;
+}
+
+
+function escribeResultados(resultado){
+      
+      //console.log(respuestas_usuario); //muestra el arreglo respuestas_usuario
+
+      select_id("resultados_div").innerHTML = ""; //Esto es necesario para que cada vez que pulsemos el botón se quite lo anterior                
+      select_id("header_resultados").innerHTML=("Resultados del test de la unidad "+unidad);
+      select_id("resultados_div").innerHTML+=("<p > Has obtenido una calificación de " + resultado+ " / " +  numPreguntasAleatorias + "</p>");
+  }
+
+
+  function marcarRespuestas(numPreguntasAleatorias, respuestas_usuario, RespuestasCorrectas){
+
+      let nombre_pregunta, opcionesPregunta, respuestaUsuario;
+      
+
+      for(let i = 0; i<numPreguntasAleatorias; i++){
+       
+            id_pregunta = 'preg' + (i+1); //Obtenemos el nombre
+            pregunta = document.getElementById(id_pregunta); //
+
+           
+            if(respuestas_usuario[i]===RespuestasCorrectas[i] )
+                   pregunta.style.backgroundColor = '#90ee90';        
+            else
+                   pregunta.style.backgroundColor = '#ffa07a';        
+
+            
+            
+      
+      
+      }
+
+}
