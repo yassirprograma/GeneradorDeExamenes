@@ -1,6 +1,9 @@
 [ 
       {
-            "unidad":"3","idpregunta":"1", "pregunta":"¿Cuánto es 1+1?", "imagen":"./img_cuestionario/preg1.png",
+            "unidad":"3",
+            "idpregunta":"1", 
+            "pregunta":"¿Cuánto es 1+1?", 
+            "imagen":"./img_cuestionario/preg1.png",
             "respuesta":"a", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -8,7 +11,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"2", "pregunta":"¿Cuánto es 1+2?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"2", 
+            "pregunta":"¿Cuánto es 1+2?", 
+            "imagen":"#",
             "respuesta":"b", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -16,7 +22,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"3", "pregunta":"¿Cuánto es 2+2?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"3", 
+            "pregunta":"¿Cuánto es 2+2?", 
+            "imagen":"#",
             "respuesta":"c", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -24,7 +33,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"4", "pregunta":"¿Cuánto es 10+1?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"4", 
+            "pregunta":"¿Cuánto es 10+1?", 
+            "imagen":"#",
             "respuesta":"c", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -32,7 +44,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"5", "pregunta":"¿Cuánto es 11+1?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"5", 
+            "pregunta":"¿Cuánto es 11+1?", 
+            "imagen":"#",
             "respuesta":"a", 
             "op_a":"12", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -40,7 +55,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"6", "pregunta":"¿Cuánto es 21+1?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"6", 
+            "pregunta":"¿Cuánto es 21+1?", 
+            "imagen":"#",
             "respuesta":"d", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -48,7 +66,10 @@
             "op_d":"22","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"7", "pregunta":"¿Cuánto es 10+10?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"7", 
+            "pregunta":"¿Cuánto es 10+10?", 
+            "imagen":"#",
             "respuesta":"c", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -56,7 +77,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"8", "pregunta":"¿Cuánto es 100+1?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"8", 
+            "pregunta":"¿Cuánto es 100+1?", 
+            "imagen":"#",
             "respuesta":"c", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -64,7 +88,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"9", "pregunta":"¿Cuánto es 1000+200?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"9", 
+            "pregunta":"¿Cuánto es 1000+200?", 
+            "imagen":"#",
             "respuesta":"b", 
             "op_a":"2", "img_a":"#",
             "op_b":"1200","img_b":"#",
@@ -72,7 +99,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"10", "pregunta":"¿Cuánto es 17+1?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"10", 
+            "pregunta":"¿Cuánto es 17+1?", 
+            "imagen":"#",
             "respuesta":"c", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -80,7 +110,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"11", "pregunta":"¿Cuánto es 6*4?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"11", 
+            "pregunta":"¿Cuánto es 6*4?", 
+            "imagen":"#",
             "respuesta":"b", 
             "op_a":"2", "img_a":"#",
             "op_b":"24","img_b":"#",
@@ -88,7 +121,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"12", "pregunta":"¿Cuánto es 12*10?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"12", 
+            "pregunta":"¿Cuánto es 12*10?", 
+            "imagen":"#",
             "respuesta":"a", 
             "op_a":"120", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -96,7 +132,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"13", "pregunta":"¿Cuánto es 16/4?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"13", 
+            "pregunta":"¿Cuánto es 16/4?", 
+            "imagen":"#",
             "respuesta":"c", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -104,7 +143,10 @@
             "op_d":"5","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"14", "pregunta":"¿Cuánto es 9/1?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"14", 
+            "pregunta":"¿Cuánto es 9/1?", 
+            "imagen":"#",
             "respuesta":"d", 
             "op_a":"2", "img_a":"#",
             "op_b":"3","img_b":"#",
@@ -112,7 +154,10 @@
             "op_d":"9","img_d":"#"
       },
       {
-            "unidad":"3","idpregunta":"15", "pregunta":"¿Cuánto es 117+1?", "imagen":"#",
+            "unidad":"3",
+            "idpregunta":"15", 
+            "pregunta":"¿Cuánto es 117+1?", 
+            "imagen":"#",
             "respuesta":"b", 
             "op_a":"2", "img_a":"#",
             "op_b":"118","img_b":"#",

@@ -61,7 +61,7 @@ function generar_N_Preguntas_Aleatorias(n, unidad){ //obtiene aleatoriamente n p
             
       }
 
-      //console.log(pregs_cuestionario);
+      console.log(pregs_cuestionario);
       return pregs_cuestionario; //devolvemos el arreglo con los objetos "preguntas"
       
 }
@@ -78,7 +78,7 @@ function escribepreguntas(quizz){
             
 
             
-            select_id("desc_preg"+x.toString()).innerHTML=("<h2>"+question.pregunta+"</h2>");
+            select_id("desc_preg"+x.toString()).innerHTML=("<h2>"+x+". "+question.pregunta+"</h2>");
             select_id("img_preg"+x.toString()).setAttribute("src", question.imagen);
             if(question.imagen==="#")select_id("img_preg"+x.toString()).style.display="none";
             

@@ -1,123 +1,406 @@
 [ 
       {
-            "unidad":"1","idpregunta":"1", "pregunta":"¿Cuánto es 1+1?", "imagen":"./img_cuestionario/preg1.png",
+            "unidad":"1","idpregunta":"1", 
+            "pregunta":"De un grupo de 100 alumnos, 47 no han escogido informática como optativa, 56 no han escogido teatro como optativa y 27 no han escogido ni informática ni teatro. ¿Cuántos alumnos han escogido sólo un curso?", 
+            "imagen":"$",
             "respuesta":"a", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"49 personas", "img_a":"#",
+            "op_b":"60 personas","img_b":"#",
+            "op_c":"50 personas","img_c":"#",
+            "op_d":"48 personas","img_d":"#"
       },
       {
-            "unidad":"1","idpregunta":"2", "pregunta":"¿Cuánto es 1+2?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"2", 
+            "pregunta":"Se lanza un dado 100 veces, de las cuales cae 10 uno, 15 dos, 20 tres, 14 cuatro, 26 cinco y 25 seis. Calcular la probabilidad mediante probabilidad frecuentista de obtener un 5, ¿Cuánta diferencia hay con la probabilidad clásica?", 
+            "imagen":"#",
             "respuesta":"b", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"Frecuentista: 25%, Clasica= 10%, Diferencia 15%", "img_a":"#",
+            "op_b":"Frecuentista: 26%, Clasica= 16%, Diferencia 10%","img_b":"#",
+            "op_c":"Frecuentista: 10%, Clasica= 6%, Diferencia 4%","img_c":"#",
+            "op_d":"Frecuentista: 15%, Clasica= 16%, Diferencia 1%","img_d":"#"
       },
       {
-            "unidad":"1","idpregunta":"3", "pregunta":"¿Cuánto es 2+2?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"3", 
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad1/preg3.png",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":" ", "img_a":"./img_cuestionario/unidad1/preg3_a.png",
+            "op_b":" ","img_b":"./img_cuestionario/unidad1/preg3_b.png",
+            "op_c":" ","img_c":"./img_cuestionario/unidad1/preg3_c.png",
+            "op_d":" ","img_d":"./img_cuestionario/unidad1/preg3_d.png"
       },
       {
-            "unidad":"1","idpregunta":"4", "pregunta":"¿Cuánto es 10+1?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"4",
+            "pregunta":"Hallar la siguiente información en el diagrama de Venn", 
+            "imagen":"./img_cuestionario/unidad1/preg4.png",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"11","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":" ", "img_a":"./img_cuestionario/unidad1/preg4_a.png",
+            "op_b":" ","img_b":"./img_cuestionario/unidad1/preg4_b.png",
+            "op_c":" ","img_c":"./img_cuestionario/unidad1/preg4_c.png",
+            "op_d":" ","img_d":"./img_cuestionario/unidad1/preg4_d.png"
       },
       {
-            "unidad":"1","idpregunta":"5", "pregunta":"¿Cuánto es 11+1?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"5", 
+            "pregunta":"En un casino se tira un dado de 10 caras (trapezoedro pentagonal) con números del 1 al 10, al mismo tiempo se lanza una moneda al aire, determinar |S|, donde S es el espacio muestral.",
+            "imagen":"#",
             "respuesta":"a", 
-            "op_a":"12", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"|S|=20", "img_a":"#",
+            "op_b":"|S|=12","img_b":"#",
+            "op_c":"|S|=100","img_c":"#",
+            "op_d":"|S|=4,398,046,511,104","img_d":"#"
       },
       {
-            "unidad":"1","idpregunta":"6", "pregunta":"¿Cuánto es 21+1?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"6", 
+            "pregunta":"Un cargamento de 12 televisores contiene tres defectuosos. ¿De cuantas formas un hotel puede comprar cinco de estas unidades y recibir al menos dos defectuosas?", 
+            "imagen":"#",
             "respuesta":"d", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"22","img_d":"#"
+            "op_a":"299 formas", "img_a":"#",
+            "op_b":"50 formas","img_b":"#",
+            "op_c":"289 formas","img_c":"#",
+            "op_d":"288 formas","img_d":"#"
       },
       {
-            "unidad":"1","idpregunta":"7", "pregunta":"¿Cuánto es 10+10?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"7",
+            "pregunta":"Tengo 40 pares de calcetines, pero me gusta combinarlos, todos los pares son diferentes, el calcetín derecho no puede ir en el pie izquierdo y viceversa ¿cuántas formas de combinarlos tengo si quiero llevar calcetines diferentes en cada pie?", 
+            "imagen":"#",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"20","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"8.15*10^47", "img_a":"#",
+            "op_b":"780","img_b":"#",
+            "op_c":"1560","img_c":"#",
+            "op_d":"40","img_d":"#"
       },
       {
-            "unidad":"1","idpregunta":"8", "pregunta":"¿Cuánto es 100+1?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"8", 
+            "pregunta":"En un congreso se encuentran 3 estadounidenses, 4 franceses, 4 daneses y 2 mexicanos. Si se sientan alrededor de una mesa. ¿Cuál es el total de formas en que pueden hacerlo si tienen que estar juntos por nacionalidad?", 
+            "imagen":"#",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"101","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"6,912", "img_a":"#",
+            "op_b":"165,888","img_b":"#",
+            "op_c":"41,472","img_c":"#",
+            "op_d":"48","img_d":"#"
       },
       {
-            "unidad":"1","idpregunta":"9", "pregunta":"¿Cuánto es 1000+200?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"9",
+            "pregunta":"Luis, Andrés y Esdras se presentan a un concurso de clavados, se otorgan los siguientes premios: 1500$ al primer lugar y 500$ al segundo lugar. ¿De cuántas formas se puede repartir el premio de primer y segundo lugar?", 
+            "imagen":"#",
             "respuesta":"b", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"1200","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"4 Formas distintas", "img_a":"#",
+            "op_b":"6 Formas distintas","img_b":"#",
+            "op_c":"5 Formas distintas","img_c":"#",
+            "op_d":"7 Formas distintas","img_d":"#"
       },
       {
-            "unidad":"1","idpregunta":"10", "pregunta":"¿Cuánto es 17+1?", "imagen":"#",
-            "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"18","img_c":"#",
-            "op_d":"5","img_d":"#"
-      },
-      {
-            "unidad":"1","idpregunta":"11", "pregunta":"¿Cuánto es 6*4?", "imagen":"#",
-            "respuesta":"b", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"24","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
-      },
-      {
-            "unidad":"1","idpregunta":"12", "pregunta":"¿Cuánto es 12*10?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"10", 
+            "pregunta":"El CURP en México se conforma de 11 letras y 7 dígitos. ¿Cuántos CURPs existen si pueden repetirse tanto dígitos como letras?", 
+            "imagen":"#",
             "respuesta":"a", 
-            "op_a":"120", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"5.559060567⋅10^22", "img_a":"#",
+            "op_b":"1.04603∙10^21","img_b":"#",
+            "op_c":"270","img_c":"#",
+            "op_d":"1.088∙10^28","img_d":"#"
       },
       {
-            "unidad":"1","idpregunta":"13", "pregunta":"¿Cuánto es 16/4?", "imagen":"#",
-            "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
-      },
-      {
-            "unidad":"1","idpregunta":"14", "pregunta":"¿Cuánto es 9/1?", "imagen":"#",
-            "respuesta":"d", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"9","img_d":"#"
-      },
-      {
-            "unidad":"1","idpregunta":"15", "pregunta":"¿Cuánto es 117+1?", "imagen":"#",
+            "unidad":"1",
+            "idpregunta":"11", 
+            "pregunta":"El CURP en México se conforma de 11 letras y 7 dígitos. ¿Cuántos CURPs existen si no se pueden repetir dígitos? ", 
+            "imagen":"#",
             "respuesta":"b", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"118","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"6.3264∙10^15", "img_a":"#",
+            "op_b":"3.362119831⋅10^21","img_b":"#",
+            "op_c":"1.4063∙10^22","img_c":"#",
+            "op_d":"5.2043∙10^21","img_d":"#"
+      },
+      {
+            "unidad":"1",
+            "idpregunta":"12", 
+            "pregunta":"El CURP en México se conforma de 11 letras y 7 dígitos. ¿Cuántos CURPs existen si no se pueden repetir letras?", 
+            "imagen":"#",
+            "respuesta":"a", 
+            "op_a":"5.204310471⋅10^21", "img_a":"#",
+            "op_b":"3.362119831⋅10^21","img_b":"#",
+            "op_c":"4.4756712∙10^20","img_c":"#",
+            "op_d":"5.559∙10^22","img_d":"#"
+      },
+      {
+            "unidad":"1",
+            "idpregunta":"13", 
+            "pregunta":"El CURP en México se conforma de 11 letras y 7 dígitos. ¿Cuántos CURPs existen si no se pueden repetir ni letras ni dígitos?", 
+            "imagen":"#",
+            "respuesta":"c", 
+            "op_a":"270", "img_a":"#",
+            "op_b":"37","img_b":"#",
+            "op_c":"3.147566973⋅10^20","img_c":"#",
+            "op_d":"8.1206∙10^15","img_d":"#"
+      },
+      {
+            "unidad":"1",
+            "idpregunta":"14", 
+            "pregunta":"En el experimento de lanzar simultáneamente 3 monedas honradas, obtener 1 cara y dos cruces ", 
+            "imagen":"#",
+            "respuesta":"d", 
+            "op_a":"0.385", "img_a":"#",
+            "op_b":"0.4","img_b":"#",
+            "op_c":"0.365","img_c":"#",
+            "op_d":"0.375","img_d":"#"
+      },
+      {
+            "unidad":"1",
+            "idpregunta":"15", 
+            "pregunta":"En el experimento de lanzar simultáneamente 3 monedas honradas, obtener 3 cruces", 
+            "imagen":"#",
+            "respuesta":"b", 
+            "op_a":"0.250", "img_a":"#",
+            "op_b":"0.125","img_b":"#",
+            "op_c":"0.350","img_c":"#",
+            "op_d":"0.120","img_d":"#"
+      },
+      {
+            "unidad":"1",
+            "idpregunta":"17", 
+            "pregunta":"Se tienen en una tómbola 20 bolas, 6 rojas, 7 verdes, 3 azules, 3 blancas y 1 negra. Obtener la probabilidad de que al sacar 1 bola esta sea verde o negra", 
+            "imagen":"#",
+            "respuesta":"d", 
+            "op_a":"0.175", "img_a":"#",
+            "op_b":"0.2","img_b":"#",
+            "op_c":"0.25","img_c":"#",
+            "op_d":"0.4","img_d":"#"
+            
+      }, 
+      {
+            "unidad":"1",
+            "idpregunta":"18", 
+            "pregunta":"Una secretaria escribió a máquina cuatro cartas e hizo 4 sobres; y por descuido, insertó las cartas al azar dentro de los sobres. Encuentre la probabilidad de que (a) ninguna carta esté en el sobre correcto, (b) al menos una carta entró en el sobre correcto, (c) sólo una carta esté en el sobre correcto, (d) tres cartas estén en los sobres correctos.", 
+            "imagen":"#",
+            "respuesta":"a", 
+            "op_a":"(a) 9, (b) 0.625, (c) 0.333, (d)  0", "img_a":"#",
+            "op_b":"(a) 3, (b) 0.125, (c) 0.333, (d)  0","img_b":"#",
+            "op_c":"(a) 3, (b) 0.625, (c) 0.333, (d)  0","img_c":"#",
+            "op_d":"(a) 9, (b) 0.125, (c) 0.333, (d)  2","img_d":"#"
+      },
+
+      {
+            "unidad":"1",
+            "idpregunta":"19", 
+            "pregunta":"La probabilidad de que, al tirar un dado, salga 3 es de 1/6. La probabilidad de que salga 4, es de 1/6, Calcular la probabilidad de que al tirar el dado salga 3 o 4", 
+            "imagen":"#",
+            "respuesta":"c", 
+            "op_a":"1/6", "img_a":"#",
+            "op_b":"1/2","img_b":"#",
+            "op_c":"1/3","img_c":"#",
+            "op_d":"1/12","img_d":"#"
+      },
+
+      {
+            "unidad":"1",
+            "idpregunta":"20", 
+            "pregunta":"Cierto egresado de ESCOM aplica para diferentes trabajos, las probabilidades de que sea contratado en cada empresa a la que aplicó es de 0.01, 0.2, 0.05, 0.09, 0.1, ¿cuál es la probabilidad de que el egresado no sea contratado en ninguna empresa?", 
+            "imagen":"#",
+            "respuesta":"b", 
+            "op_a":"40%", "img_a":"#",
+            "op_b":"55%","img_b":"#",
+            "op_c":"145%","img_c":"#",
+            "op_d":"0.00000009","img_d":"#"
+      },
+      {
+            "unidad":"1",
+            "idpregunta":"21", 
+            "pregunta":"Cierto egresado de ESCOM aplica para diferentes trabajos, las probabilidades de que sea contratado en cada empresa a la que aplicó es de 0.01, 0.2, 0.05, 0.09, 0.1, ¿cuál es la probabilidad de que el egresado no sea contratado en ninguna empresa?", 
+            "imagen":"#",
+            "respuesta":"b", 
+            "op_a":"40%", "img_a":"#",
+            "op_b":"55%","img_b":"#",
+            "op_c":"145%","img_c":"#",
+            "op_d":"0.00000009","img_d":"#"
+      },
+
+      {
+            "unidad":"1",
+            "idpregunta":"22", 
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad1/preg22.png",
+            "respuesta":"d", 
+            "op_a":"2/9", "img_a":"#",
+            "op_b":"1/9","img_b":"#",
+            "op_c":"2/3","img_c":"#",
+            "op_d":"1/3","img_d":"#"
+      },
+
+      {
+            "unidad":"1",
+            "idpregunta":"23", 
+            "pregunta":"Sean A y B dos sucesos aleatorios con p(A)=½, p(B)=1/3*p(A∩ B) = ¼. Determine p(A|B)", 
+            "imagen":"",
+            "respuesta":"b", 
+            "op_a":"1/2", "img_a":"#",
+            "op_b":"3/4","img_b":"#",
+            "op_c":"1/6","img_c":"#",
+            "op_d":"4/3","img_d":"#"   
+      },
+
+      {
+
+            "unidad":"1",
+            "idpregunta":"24", 
+            "pregunta":"Un taller sobre programación está formado por 20 estudiantes de cuarto semestre, 20 de quinto y 10 egresados. De este taller, tres de cuarto, diez de quinto y siete graduados completaron el taller. Si se selecciona al azar un estudiante y se encuentra que completó el taller, ¿cuál es la probabilidad de que sea egresado?", 
+            "imagen":"",
+            "respuesta":"c", 
+            "op_a":"15%", "img_a":"#",
+            "op_b":"50%","img_b":"#",
+            "op_c":"35% ","img_c":"#",
+            "op_d":"85%","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"25", 
+            "pregunta":"Se lanzan un par de dados. Sabiendo que la suma de los puntos es 6, calcula la probabilidad de que solo en uno de los dados aparezca un 2", 
+            "imagen":"",
+            "respuesta":"a", 
+            "op_a":"2/5", "img_a":"#",
+            "op_b":"10/36","img_b":"#",
+            "op_c":"1/5","img_c":"#",
+            "op_d":"3/36","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"26", 
+            "pregunta":"La probabilidad de que esté soleado es P(S)=0.58 y la probabilidad de que llueva es P(L)=0.16 y de que esté soleado y llueva es P(S∩L)=0.08, ¿cuál es la probabilidad de que llueva dado que está soleado?", 
+            "imagen":"",
+            "respuesta":"d", 
+            "op_a":"8/29", "img_a":"#",
+            "op_b":"75%","img_b":"#",
+            "op_c":"84.08%","img_c":"#",
+            "op_d":"4/29","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"27", 
+            "pregunta":"En unos aeropuertos por protocolos del gobierno se deben inspeccionan al azar a los pasajeros cuando suben y bajan del avión. Al subir se inspeccionan a 20% de los pasajeros, y al bajar al 10% ¿Cuál es la probabilidad de que, si a un pasajero se le inspecciona al subir, se le inspeccione también al bajar?", 
+            "imagen":"",
+            "respuesta":"a", 
+            "op_a":"10%", "img_a":"#",
+            "op_b":"2%","img_b":"#",
+            "op_c":"20%","img_c":"#",
+            "op_d":"100%","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"28", 
+            "pregunta":"En un colegio, la probabilidad de que un alumno seleccionado al azar hable inglés es de 0,20; mientras que la probabilidad de que un alumno juegue fútbol es de 0,80. ", 
+            "imagen":"",
+            "respuesta":"d", 
+            "op_a":"4/4", "img_a":"#",
+            "op_b":"5/6","img_b":"#",
+            "op_c":"1/2","img_c":"#",
+            "op_d":"16%","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"29", 
+            "pregunta":"Una compañía va a lanzar tres nuevos champús. Se cree que la probabilidad de que el primero tenga éxito es de 0.45, de que el segundo lo tenga es de 0.55 y de que el tercero lo tenga es de 0.75. ¿Cuál es la probabilidad de que (a) los tres tengan éxito, (b) por lo menos dos tengan éxito?", 
+            "imagen":"",
+            "respuesta":"b", 
+            "op_a":"0.9975", "img_a":"#",
+            "op_b":"0.6263","img_b":"#",
+            "op_c":"0.8119","img_c":"#",
+            "op_d":"0.5025","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"30", 
+            "pregunta":"Sabiendo que P(A)=0.70; P(B)=0.50 y además P (A∩B)=0.4, determinar si son eventos dependientes o independientes.", 
+            "imagen":"",
+            "respuesta":"a", 
+            "op_a":"Son dependientes", "img_a":"#",
+            "op_b":"Son independientes","img_b":"#",
+            "op_c":"*","img_c":"#",
+            "op_d":"*","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"31", 
+            "pregunta":"Tenemos un dado de 10 caras y una bolsa con 12 canicas, 3 de color blanco, 2 de color rojo, 4 de color verde, 3 de color negro, ¿cuál es la probabilidad de que el dado caiga en número par cuando sacamos una canica de color blanco de la bolsa?", 
+            "imagen":"",
+            "respuesta":"c", 
+            "op_a":"0.2758", "img_a":"#",
+            "op_b":"0.5","img_b":"#",
+            "op_c":"0.125","img_c":"#",
+            "op_d":"0.29","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"32", 
+            "pregunta":"En una fábrica hay 3 máquinas cada una tiene una probabilidad de atascarse y causar un incendio la máquina A falla 1 de cada 200 productos y 1 de cada 100 veces que se atasca se incendia la B falla 1 de cada 500 veces y se incendia 1 de cada 50 fallos y la C falla 1 de cada 150 y se incendia 1 de cada 150 fallos, si suena la alarma de incendio ¿qué maquina se debería de revisar primero?", 
+            "imagen":"",
+            "respuesta":"a", 
+            "op_a":"La máquina A es la que más probablemente causo el incendio", "img_a":"#",
+            "op_b":"La máquina B es la que más probablemente causo el incendio","img_b":"#",
+            "op_c":"La máquina C es la que más probablemente causo el incendio","img_c":"#",
+            "op_d":"La máquina A y C tienen igual probabilidad de haber causado el incendio","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"33", 
+            "pregunta":"En la academia de la ESCOM, la probabilidad de que a un alumno seleccionado al azar le guste el helado es del 60 %, mientras que la probabilidad de que a un alumno le guste la torta es del 36 %. Además, se sabe que la probabilidad de que a un alumno le guste la torta dado que le gusta el helado es del 40 %. Calcular la probabilidad de que a un alumno le guste el helado, dado que le gusta la torta.", 
+            "imagen":"",
+            "respuesta":"c", 
+            "op_a":"17%", "img_a":"#",
+            "op_b":"29%","img_b":"#",
+            "op_c":"66.67%","img_c":"#",
+            "op_d":"14%","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"34", 
+            "pregunta":"En una ciudad existen 3 churrerías, las cuales atienden al 50%, 30% y 20% de toda la población, respectivamente. Los porcentajes de que los churros tengan la cantidad adecuada de azúcar son 0.9, 0.8 y 0.85, respectivamente. Si se encuentra que un churro tiene la cantidad de azúcar adecuada ¿Cuál es la probabilidad de que haya sido de la primera panadería?", 
+            "imagen":"",
+            "respuesta":"b", 
+            "op_a":"58.13%", "img_a":"#",
+            "op_b":"52.32%","img_b":"#",
+            "op_c":"54.87%","img_c":"#",
+            "op_d":"48.91%","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"35", 
+            "pregunta":"Tenemos tres urnas distintas, la primera con 5 bolas rojas y 3 azules, la segunda con 3 bolas rojas y 2 azules y la tercera con 2 bolas rojas y 4 azules, escogemos una urna al azar y extraemos una bola. Si la bola ha sido azul, ¿Cuál es la probabilidad de que haya sido extraída de la urna dos?", 
+            "imagen":"",
+            "respuesta":"a", 
+            "op_a":"48/173", "img_a":"#",
+            "op_b":"173/360","img_b":"#",
+            "op_c":"2/15","img_c":"#",
+            "op_d":"15/173","img_d":"#"   
+      },
+      {
+
+            "unidad":"1",
+            "idpregunta":"36", 
+            "pregunta":"Dentro de ESCOM 1/250 alumnos es portador de COVID-19, para detectar este virus se dispone de pruebas PCR, las cuales no son 100% correctas, el 80% de las pruebas arrojan resultados positivos correctos, mientras que un 17% de las pruebas que arrojan un resultado positivo falso. Si un alumno da positivo a la prueba, ¿cuál es la probabilidad de que no tenga COVID-19?", 
+            "imagen":"",
+            "respuesta":"a", 
+            "op_a":"98.14%", "img_a":"#",
+            "op_b":"16.932%","img_b":"#",
+            "op_c":"17%","img_c":"#",
+            "op_d":"83-068%","img_d":"#"   
       }
       
 

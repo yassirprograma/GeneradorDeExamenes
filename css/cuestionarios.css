@@ -36,6 +36,16 @@ div.texto, header{
     color: white;
 }
 
+.imagen{
+      text-align: center;
+}
+.imagen img{
+      width: 90%;
+      max-height: 80vh;
+      max-width: 95vh;
+}
+
+
 .opciones input{
       margin: 20px;     
 }
@@ -69,6 +79,12 @@ div.texto, header{
       
 }
 */
+
+.opciones img{
+      width: 90%;
+}
+
+
 #divbotonenviar{
       text-align: center;
 }
