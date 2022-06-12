@@ -2,7 +2,7 @@
       {
             "unidad":"1","idpregunta":"1", 
             "pregunta":"De un grupo de 100 alumnos, 47 no han escogido informática como optativa, 56 no han escogido teatro como optativa y 27 no han escogido ni informática ni teatro. ¿Cuántos alumnos han escogido sólo un curso?", 
-            "imagen":"$",
+            "imagen":"#",
             "respuesta":"a", 
             "op_a":"49 personas", "img_a":"#",
             "op_b":"60 personas","img_b":"#",
@@ -26,7 +26,7 @@
             "pregunta":" ", 
             "imagen":"./img_cuestionario/unidad1/preg3.png",
             "respuesta":"c", 
-            "op_a":" ", "img_a":"./img_cuestionario/unidad1/preg3_a.png",
+            "op_a":" ","img_a":"./img_cuestionario/unidad1/preg3_a.png",
             "op_b":" ","img_b":"./img_cuestionario/unidad1/preg3_b.png",
             "op_c":" ","img_c":"./img_cuestionario/unidad1/preg3_c.png",
             "op_d":" ","img_d":"./img_cuestionario/unidad1/preg3_d.png"

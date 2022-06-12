@@ -5,7 +5,7 @@
             "pregunta":"¿Cuánto es 1+1?", 
             "imagen":"./img_cuestionario/preg1.png",
             "respuesta":"a", 
-            "op_a":"2", "img_a":"#",
+            "op_a":"", "img_a":"#",
             "op_b":"3","img_b":"#",
             "op_c":"4","img_c":"#",
             "op_d":"5","img_d":"#"
