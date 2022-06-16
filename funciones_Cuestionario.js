@@ -28,13 +28,13 @@ function ajustatamimgopciones(porcentaje){
                   name4="img_d_preg"+i;
 
                   select_id(name1).style.width=(porcentaje+"%") ;
-                  console.log("web1");
+                  //console.log("web1");
                   select_id(name2).style.width=(porcentaje+"%") ;
-                  console.log("web2");
+                  //console.log("web2");
                   select_id(name3).style.width=(porcentaje+"%");
-                  console.log("web3");
+                  //console.log("web3");
                   select_id(name4).style.width=(porcentaje+"%") ;
-                  console.log("web4");
+                  //console.log("web4");
             }
       } else {
             /* La pantalla tiene menos de 600 píxeles de ancho */
@@ -97,7 +97,7 @@ function generar_N_Preguntas_Aleatorias(n, unidad){ //obtiene aleatoriamente n p
             
       }
 
-      console.log(pregs_cuestionario);
+      //console.log(pregs_cuestionario);
       return pregs_cuestionario; //devolvemos el arreglo con los objetos "preguntas"
       
 }
