@@ -2,168 +2,347 @@
       {
             "unidad":"4",
             "idpregunta":"1", 
-            "pregunta":"¿Cuánto es 1+1?", 
-            "imagen":"./img_cuestionario/preg1.png",
+            "pregunta":"A. Se tiene una bolsa de dulces con caramelos de diferentes colores hay 7 verdes, 6 rojos, 5 azules y 2 amarillos, cual es la fórmula que determina la probabilidad de obtener una cantidad X de dulces verdes y Y de dulces amarillos cuando se sacan sin sustitución 3 dulces.", 
+            "imagen":"./img_cuestionario/unidad4/preg1.png",
             "respuesta":"a", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":" ", "img_a":"./img_cuestionario/unidad4/preg1_a.png",
+            "op_b":" ","img_b":"./img_cuestionario/unidad4/preg1_b.png",
+            "op_c":" ","img_c":"./img_cuestionario/unidad4/preg1_c.png",
+            "op_d":" ","img_d":"./img_cuestionario/unidad4/preg1_d.png"
       },
       {
             "unidad":"4",
             "idpregunta":"2", 
-            "pregunta":"¿Cuánto es 1+2?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg2.png",
             "respuesta":"b", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"50%", "img_a":"#",
+            "op_b":"30%","img_b":"#",
+            "op_c":"70%","img_c":"#",
+            "op_d":"40%","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"3", 
-            "pregunta":"¿Cuánto es 2+2?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg2.png",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"h(0)=140,h(1)=150,g(0)=50,g(1)=90,g(2)=130", "img_a":"#",
+            "op_b":"h(0)=130,h(1)=50,g(0)=150,g(1)=90,g(2)=140","img_b":"#",
+            "op_c":"h(0)=130,h(1)=150,g(0)=50,g(1)=90,g(2)=140","img_c":"#",
+            "op_d":"h(0)=130,h(1)=150,g(0)=90,g(1)=50,g(2)=140","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"4", 
-            "pregunta":"¿Cuánto es 10+1?", 
-            "imagen":"#",
+            "pregunta":" “DuermeYa” es una marca conocida de almohadas que promete brindar un descanso pleno a los estudiantes de escasos recursos. Su paquete más conocido es una caja la cual contiene 4 almohadas de pluma de dodo, 3 almohadas de pelo de gato y 5 fundas de ceda. Un día, un alumno decide adquirir el producto y saca 3 elementos de la caja. Suponga que “x” es la variable aleatoria que representa las almohadas de pluma de dodo y “y” las almohadas de pelo de gato.", 
+            "imagen":"./img_cuestionario/unidad4/preg4.png",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"11","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"22.72% y 21.81 % respectivamente", "img_a":"#",
+            "op_b":"36.36% y 20.90 % respectivamente","img_b":"#",
+            "op_c":"36.36 % y 21.81% respectivamente.","img_c":"#",
+            "op_d":"22.72% y 20.90% respectivamente","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"5", 
-            "pregunta":"¿Cuánto es 11+1?", 
-            "imagen":"#",
+            "pregunta":"Cierto supermercado tiene una caja de salida común y una caja rápida, en que X1 es el número de clientes que están esperando en la caja común, en un momento particular del día, y X2 es  el  número  de  clientes  que  están  esperando  en  la  caja  rápida,  al  mismo  tiempo. Suponga que la función de probabilidad conjunta de X1 y X2 es la siguiente:", 
+            "imagen":"./img_cuestionario/unidad4/preg5.png",
             "respuesta":"a", 
-            "op_a":"12", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"0.22", "img_a":"",
+            "op_b":"0.31","img_b":"#",
+            "op_c":"0.45","img_c":"#",
+            "op_d":"0.32","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"6", 
-            "pregunta":"¿Cuánto es 21+1?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg6.png",
             "respuesta":"d", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"22","img_d":"#"
+            "op_a":"3%", "img_a":"#",
+            "op_b":"45.68%","img_b":"#",
+            "op_c":"32.15%","img_c":"#",
+            "op_d":"1.57%","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"7", 
-            "pregunta":"¿Cuánto es 10+10?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg7.png",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"20","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":" ", "img_a":"./img_cuestionario/unidad4/preg7_a.png",
+            "op_b":" ","img_b":"./img_cuestionario/unidad4/preg7_b.png",
+            "op_c":" ","img_c":"./img_cuestionario/unidad4/preg7_c.png",
+            "op_d":" ","img_d":"./img_cuestionario/unidad4/preg7_d.png"
       },
       {
             "unidad":"4",
             "idpregunta":"8", 
-            "pregunta":"¿Cuánto es 100+1?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg8.png",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"101","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":" ", "img_a":"./img_cuestionario/unidad4/preg8_a.png",
+            "op_b":" ","img_b":"./img_cuestionario/unidad4/preg8_b.png",
+            "op_c":" ","img_c":"./img_cuestionario/unidad4/preg8_c.png",
+            "op_d":" ","img_d":"./img_cuestionario/unidad4/preg8_d.png"
       },
       {
             "unidad":"4",
             "idpregunta":"9", 
-            "pregunta":"¿Cuánto es 1000+200?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg9.png",
             "respuesta":"b", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"1200","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"35/65", "img_a":"#",
+            "op_b":"37/56","img_b":"#",
+            "op_c":"44/54","img_c":"#",
+            "op_d":"48/69","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"10", 
-            "pregunta":"¿Cuánto es 17+1?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg10.png",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"18","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"50.5%", "img_a":"#",
+            "op_b":"32.5%","img_b":"#",
+            "op_c":"52.5%","img_c":"#",
+            "op_d":"75%","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"11", 
-            "pregunta":"¿Cuánto es 6*4?", 
-            "imagen":"#",
+            "pregunta":"", 
+            "imagen":"./img_cuestionario/unidad4/preg11.png",
             "respuesta":"b", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"24","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"Son dependientes", "img_a":"#",
+            "op_b":"Son independientes","img_b":"#",
+            "op_c":" ","img_c":"#",
+            "op_d":" ","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"12", 
-            "pregunta":"¿Cuánto es 12*10?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg12.png",
             "respuesta":"a", 
-            "op_a":"120", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"1/3", "img_a":"#",
+            "op_b":"2/3","img_b":"#",
+            "op_c":"1/6","img_c":"#",
+            "op_d":"1/4","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"13", 
-            "pregunta":"¿Cuánto es 16/4?", 
-            "imagen":"#",
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg13.png",
             "respuesta":"c", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":" ", "img_a":"./img_cuestionario/unidad4/preg13_a.png",
+            "op_b":" ","img_b":"./img_cuestionario/unidad4/preg13_b.png",
+            "op_c":" ","img_c":"./img_cuestionario/unidad4/preg13_c.png",
+            "op_d":" ","img_d":"./img_cuestionario/unidad4/preg13_d.png"
       },
       {
             "unidad":"4",
             "idpregunta":"14", 
-            "pregunta":"¿Cuánto es 9/1?", 
-            "imagen":"#",
-            "respuesta":"d", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"3","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"9","img_d":"#"
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg14.png",
+            "respuesta":"a", 
+            "op_a":"Son independientes", "img_a":"#",            
+            "op_b":"Son dependientes","img_b":"#",
+            "op_c":" ","img_c":"#",
+            "op_d":" ","img_d":"#"
       },
       {
             "unidad":"4",
             "idpregunta":"15", 
-            "pregunta":"¿Cuánto es 117+1?", 
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg15.png",
+            "respuesta":"b", 
+            "op_a":"10.71 %", "img_a":"#",
+            "op_b":"46.43 %","img_b":"#",
+            "op_c":"64.28 %","img_c":"#",
+            "op_d":"50 %","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"16", 
+            "pregunta":" La esperanza de vida en México es de aproximadamente 74.9 años con una desviación estándar de 10.  ¿Cuál es la probabilidad de que al tomar una muestra de 100 habitantes la media sea de entre 72.3 y 72.8 habitantes como en Chiapas?", 
+            "imagen":"#",
+            "respuesta":"c", 
+            "op_a":"0.47%", "img_a":"#",
+            "op_b":"1.79%","img_b":"#",
+            "op_c":"1.32%","img_c":"#",
+            "op_d":"0.001%","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"17", 
+            "pregunta":"Se producen tornillos, se busca que su rosca tenga un radio de 5 mm y que se desvié a lo más medio milímetro, si las pruebas han mostrado que la desviación estándar es de 1 mm, los tornillos son fabricados en lotes de 40 y son desechados si se encuentra que en promedio su radio es inaceptable, Calcule la probabilidad de tener que desechar un lote", 
+            "imagen":"#",
+            "respuesta":"d", 
+            "op_a":"16%", "img_a":"#",
+            "op_b":"1.6%","img_b":"#",
+            "op_c":"0.08%","img_c":"#",
+            "op_d":"0.16%","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"18", 
+            "pregunta":"La población de las temperaturas corporales de adultos sanos tiene media μ=38.6° y desviación típica de σ=0.4°. Si obtenemos una muestra de 100 personas. ¿Cuál es la probabilidad de que la media de la temperatura de la muestra sea menor o igual a 36.7°?", 
+            "imagen":"#",
+            "respuesta":"a", 
+            "op_a":"P(X<=36.7)=0.0062", "img_a":"#",
+            "op_b":"P(X<=36.7)=0.9938","img_b":"#",
+            "op_c":"P(X<=36.7)=0.0060","img_c":"#",
+            "op_d":"P(X<=36.7)=0.9940","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"19", 
+            "pregunta":"Las bolsas de sal envasadas por una máquina tienen μ  =500 g y σ =35g. Las bolsas se empaquetaron en cajas de 100 unidades. Calcular la probabilidad de que la media de los pesos de las bolsas de un paquete sea menor que 495g.Calcular la probabilidad de que una caja 100 de bolsas pese más de 51 kg.", 
+            "imagen":"#",
+            "respuesta":"a", 
+            "op_a":"0.0764", "img_a":"#",
+            "op_b":"0.05","img_b":"#",
+            "op_c":"0.089","img_c":"#",
+            "op_d":"0.99","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"20", 
+            "pregunta":"Una empresa que fabrica memorias USB asegura que la vida útil de sus dispositivos es de, en promedio, 10 años. Si se presenta una desviación estándar de 25 meses. Encuentre la probabilidad de que, en una muestra aleatoria de 20 dispositivos, la vida promedio sea mayor a 11 años.", 
             "imagen":"#",
             "respuesta":"b", 
-            "op_a":"2", "img_a":"#",
-            "op_b":"118","img_b":"#",
-            "op_c":"4","img_c":"#",
-            "op_d":"5","img_d":"#"
+            "op_a":"2.07 % de probabilidades de que dure más de 11 años", "img_a":"#",
+            "op_b":"1.62 % de probabilidades de que dure más de 11 años","img_b":"#",
+            "op_c":"0.73 % de probabilidades de que dure más de 11 años","img_c":"#",
+            "op_d":"98.38% de probabilidades de que dure más de 11 años","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"21", 
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg21.png",
+            "respuesta":"c", 
+            "op_a":"0.28%", "img_a":"#",
+            "op_b":"2.78%","img_b":"#",
+            "op_c":"27.76%","img_c":"#",
+            "op_d":"0.03%","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"22", 
+            "pregunta":"En un auto a veces hay una ligera diferencia en el torque ejercido por las ruedas en promedio este debe ser igual para ambas sin embargo regularmente en un carro ha una desviación estándar de 1, ¿Cuál es la probabilidad de que después de haber recorrido 20 Km se encuentre que en promedio una rueda halla ejercido 0.5 o mas de torque que la otra?", 
+            "imagen":"#",
+            "respuesta":"d", 
+            "op_a":"57.1%", "img_a":"#",
+            "op_b":"0.58%","img_b":"#",
+            "op_c":"0.05%","img_c":"#",
+            "op_d":"5.71% ","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"23", 
+            "pregunta":"Se obtiene una muestra aleatoria de 100 elementos de una población normal, que tiene media 50 y desviación estándar 8. Luego se selecciona otra muestra aleatoria de 40 elementos de una población normal, que tiene media 40 desviación estándar 12 , encontrar la probabilidad de que la media de la primera muestra exceda a la segunda en 8 o más", 
+            "imagen":"#",
+            "respuesta":"a", 
+            "op_a":"83.4%", "img_a":"#",
+            "op_b":"33.4%","img_b":"#",
+            "op_c":"50%","img_c":"#",
+            "op_d":"16.6%","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"24", 
+            "pregunta":"Cada día, miles de personas en un aeropuerto pasan por un control de seguridad en uno de dos niveles: el nivel A o el nivel B. Supón que, en promedio, a las personas les toma 26 minutos pasar por el control de seguridad en el nivel A con una desviación estándar de 7.5 minutos. En el nivel B, la media y la desviación estándar son de 24 y 4 minutos, respectivamente. Cada día, en el aeropuerto ven muestras aleatorias separadas de 100 personas de cada nivel. Calculan el tiempo medio para cada muestra, luego ven la diferencia entre las medias muestrales (Xa - Xb).", 
+            "imagen":"#",
+            "respuesta":"b", 
+            "op_a":"(2, 0.832)", "img_a":"#",
+            "op_b":"(2, 0.85)","img_b":"#",
+            "op_c":"(4.9, 0.8)","img_c":"#",
+            "op_d":"(6, 0.9)","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"25", 
+            "pregunta":"En un laboratorio, se llevan a cabo dos experimentos independientes donde se comparan los efectos de ciertas medicinas sobre un virus. La primera de estas medicinas se prueba en 10 roedores y la segunda medicina se prueba en 12 roedores. Para cada una de las medicinas, se registra un tiempo de reacción de 4 y 2 minutos respectivamente. Si la desviación estándar para ambas medicinas es de 1, encuentre la probabilidad de que la diferencia en el tiempo de reacción de la primera medicina menos la segunda sea mayor a 1 minuto.", 
+            "imagen":"#",
+            "respuesta":"c", 
+            "op_a":"0.099% ", "img_a":"#",
+            "op_b":"100%","img_b":"#",
+            "op_c":"99.01%","img_c":"#",
+            "op_d":"82%","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"26", 
+            "pregunta":"Si se toma una muestra de 10 que tiene una varianza muestal 1 y una media muestral de 10 de una población de con media de 9, cual es su T-student", 
+            "imagen":"#",
+            "respuesta":"d", 
+            "op_a":"1.5811", "img_a":"#",
+            "op_b":"0.316","img_b":"#",
+            "op_c":"15.8110","img_c":"#",
+            "op_d":"3.1622","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"27", 
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg27.png",
+            "respuesta":"a", 
+            "op_a":"Hay dependencia entre el la actividad y el estado de ánimo", "img_a":"#",
+            "op_b":"Hay independencia entre la actividad y el estado de ánimo","img_b":"#",
+            "op_c":" ","img_c":"#",
+            "op_d":" ","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"28", 
+            "pregunta":" ", 
+            "imagen":"./img_cuestionario/unidad4/preg28.png",
+            "respuesta":"b", 
+            "op_a":"t_0.01 =3.250 y t_0.3 =1.093", "img_a":"#",
+            "op_b":"t_0.01 =3.169 y t_0.3 =1.093 ","img_b":"#",
+            "op_c":"t_0.01 =3.106 y t_0.3 =1.093","img_c":"#",
+            "op_d":"t_0.01 =1.093 y t_0.3 =3.250 ","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"29", 
+            "pregunta":"En un gimnasio olímpico, cientos de deportistas de alto rendimiento entrenan día con día para obtener una buena posición en las distintas competencias en las que participan. Si se toma una muestra aleatoria de 29 deportistas, y se sabe que se tiene una varianza σ^2=12. Determine la probabilidad de que en esa muestra se tenga una varianza s^2 de al menos 15.", 
+            "imagen":"#",
+            "respuesta":"c", 
+            "op_a":"25%", "img_a":"#",
+            "op_b":"10%","img_b":"#",
+            "op_c":"20%","img_c":"#",
+            "op_d":"2%","img_d":"#"
+      },
+
+      {
+            "unidad":"4",
+            "idpregunta":"30", 
+            "pregunta":"./img_cuestionario/unidad4/preg30.png", 
+            "imagen":"#",
+            "respuesta":"a", 
+            "op_a":"La empresa debería revisar el tiempo de impresión en el día dado", "img_a":"#",
+            "op_b":"La empresa no debería preocuparse, pues todo está en orden.","img_b":"#",
+            "op_c":" ","img_c":"#",
+            "op_d":" ","img_d":"#"
       }
       
-
 ]

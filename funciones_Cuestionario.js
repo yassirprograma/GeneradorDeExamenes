@@ -1,9 +1,45 @@
 function select_id(id){
       return document.getElementById(id); //permite obtener una etiqueta por id, dentro del documento html
 }
+function select_class(clase){
+      
+      return document.getElementsByClassName(clase);
 
+}
 function style(id){
       return select_id(id).style;
+}
+
+function ajustatamimgopciones(porcentaje){
+      if (window.matchMedia("(min-width: 600px)").matches) {
+            var name1="img_a_preg";
+            var name2="img_b_preg";
+            var name3="img_c_preg";
+            var name4="img_d_preg";
+            for(var i=1;i<=10;i++){
+                  name1="img_a_preg";
+                  name2="img_b_preg";
+                  name3="img_c_preg";
+                  name4="img_d_preg";
+
+                  name1="img_a_preg"+i;
+                  name2="img_b_preg"+i;
+                  name3="img_c_preg"+i;
+                  name4="img_d_preg"+i;
+
+                  select_id(name1).style.width=(porcentaje+"%") ;
+                  console.log("web1");
+                  select_id(name2).style.width=(porcentaje+"%") ;
+                  console.log("web2");
+                  select_id(name3).style.width=(porcentaje+"%");
+                  console.log("web3");
+                  select_id(name4).style.width=(porcentaje+"%") ;
+                  console.log("web4");
+            }
+      } else {
+            /* La pantalla tiene menos de 600 píxeles de ancho */
+      }
+      
 }
 
 function readText(ruta_local){
